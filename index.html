@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyed Hamid Hosseini - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <nav class="navbar">
+        <div class="logo">Seyed Hamid Hosseini</div>
+        <div class="nav-toggle">☰</div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <img src="assets/photo_2025-06-30_15-36-16.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Seyed Hamid Hosseini.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Seyed Hamid Hosseini, a Computer Science undergrad at Amirkabir University, diving deep into AI, data analysis, and cybersecurity. I craft scalable code and hack challenges with tools like Kali Linux and Python. My passion? Teaching complex concepts and building impactful tech solutions.</p>
+        <h3>Skills</h3>
+        <div class="skills">
+            <span class="badge">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">C++</span>
+            <span class="badge">SQL</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">NumPy</span>
+            <span class="badge">Matplotlib</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">Kali Linux</span>
+            <span class="badge">Wireshark</span>
+            <span class="badge">Burp Suite</span>
+        </div>
+        <a href="assets/cv.pdf" download class="download-btn"><i class="fas fa-download"></i> Download CV</a>
+        <a href="assets/Resume.pdf" download class="download-btn"><i class="fas fa-download"></i> Download Resume</a>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Backend Developer — Nadin Soft (Sep 2024 - Jun 2025)</h3>
+            <p>Designed and implemented server-side services, APIs, and database integration using C#, ASP.NET, SQL, and JavaScript.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Cyber Security Analyst — Panah (Jul 2025)</h3>
+            <p>Worked with tools like Nmap, Burp Suite, Metasploit, and Wireshark for security analysis.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Robotic Teacher — FIRA (Jul 2025)</h3>
+            <p>Taught Arduino, C, and robotics concepts.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Undergraduate Teacher Assistant — Advanced Programming with Python (Jan - Jul 2025)</h3>
+            <p>Assisted students in learning Python programming concepts and debugging code.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Undergraduate Teacher Assistant — Data Structures and Algorithms (Aug 2025)</h3>
+            <p>Guided students through complex data structures and algorithm design.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Undergraduate Head Teacher Assistant — Advanced Programming with Java (Aug 2025)</h3>
+            <p>Led workshops and assisted in teaching Java programming and object-oriented concepts.</p>
+        </div>
+        <div class="exp-item" onclick="toggleGlow(this)">
+            <h3>Undergraduate Teacher Assistant — Operating Systems (Aug 2025)</h3>
+            <p>Supported students in understanding OS concepts like processes, threads, and memory management.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Chatroom Server-Client</h3>
+            <p>A Java-based chatroom application for real-time communication.</p>
+            <button onclick="openModal('chatroomModal')">View Summary</button>
+            <a href="https://github.com/iamhamidhosseini/Chatroom-Server-Client-" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            <div id="chatroomModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('chatroomModal')">&times;</span>
+                    <h3>Chatroom Summary</h3>
+                    <p>This project is a client-server chat application built in Java. It supports multiple users, real-time messaging, and basic encryption for secure communication.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Image Viewer</h3>
+            <p>A Java application for viewing and managing images.</p>
+            <button onclick="openModal('imageModal')">View Summary</button>
+            <a href="https://github.com/iamhamidhosseini/Image-Viewer" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            <div id="imageModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('imageModal')">&times;</span>
+                    <h3>Image Viewer Summary</h3>
+                    <p>This Java app allows users to browse, zoom, and edit images. It supports common formats like JPG and PNG, with a simple GUI for easy navigation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Covid-19 Analysis</h3>
+            <p>Data analysis of Covid-19 datasets using Jupyter Notebook and Python libraries.</p>
+            <button onclick="openModal('covidModal')">View Summary</button>
+            <a href="https://github.com/iamhamidhosseini/Covid-19" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            <div id="covidModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('covidModal')">&times;</span>
+                    <h3>Covid-19 Summary</h3>
+                    <p>This analysis uses Python libraries like Pandas and Matplotlib to visualize Covid-19 data, including case trends, mortality rates, and regional comparisons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:iamhamidhosseini@gmail.com" class="badge contact-badge"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/seyed-hamid-hosseini-bb8a6529b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeY10vGgUQTygGa4xStL%2Fbw%3D%3D" target="_blank" class="badge contact-badge"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/iamhamidhosseini" target="_blank" class="badge contact-badge"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
