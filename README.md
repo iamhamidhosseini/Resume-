@@ -18,7 +18,7 @@ This is my personal portfolio website, showcasing my skills, experiences, and pr
 
 ## Setup
 
-Clone the repository:git clone https://github.com/iamhamidhosseini/MyCV.git
+Clone the repository:git clone https://github.com/iamhamidhosseini/Resume.git
 
 
 Open index.html in your browser.
