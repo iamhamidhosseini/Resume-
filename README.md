@@ -1,4 +1,4 @@
-# MyCV - Personal Portfolio
+# Resume - Personal Portfolio
 This is my personal portfolio website, showcasing my skills, experiences, and projects as a Computer Science student at Amirkabir University.
 ## Features
 
